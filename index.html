@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<!-- head tag -->
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Matching Game</title>
+	<meta content="matching game" name="description">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet prefetch">
+	<link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet prefetch">
+	<link href="css/app.css" rel="stylesheet"><!-- sweetalert -->
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8">
+	</script>
+</head><!-- body tag -->
+<body>
+	<!-- container class -->
+	<div class="container">
+		<!-- header class -->
+		<header>
+			<h1>Mind Game</h1>
+		</header><!-- section class -->
+		<section class="score-panel">
+			<ul class="stars">
+				<li><i class="fa fa-star"></i></li>
+				<li><i class="fa fa-star"></i></li>
+				<li><i class="fa fa-star"></i></li>
+			</ul><!-- moves class -->
+			<span class="moves" id="moves">0</span> Moves &nbsp;&nbsp;&nbsp; <span id="time">00 :: 00 :: 00</span>
+			<div class="restart">
+				<!-- anchor tag -->
+				<a href="index.html" onclick="reload()"><i class="fa fa-repeat">refresh</i></a>
+			</div>
+		</section><!-- declaration of deck cards -->
+		<ul class="deck" id="deck">
+			<li class="card" type="1"><i class="fa fa-diamond"></i></li>
+			<li class="card" type="2"><i class="fa fa-paper-plane-o"></i></li>
+			<li class="card" type="3"><i class="fa fa-anchor"></i></li>
+			<li class="card" type="4"><i class="fa fa-bolt"></i></li>
+			<li class="card" type="5"><i class="fa fa-cube"></i></li>
+			<li class="card" type="3"><i class="fa fa-anchor"></i></li>
+			<li class="card" type="6"><i class="fa fa-leaf"></i></li>
+			<li class="card" type="7"><i class="fa fa-bicycle"></i></li>
+			<li class="card" type="1"><i class="fa fa-diamond"></i></li>
+			<li class="card" type="8"><i class="fa fa-bomb"></i></li>
+			<li class="card" type="6"><i class="fa fa-leaf"></i></li>
+			<li class="card" type="8"><i class="fa fa-bomb"></i></li>
+			<li class="card" type="4"><i class="fa fa-bolt"></i></li>
+			<li class="card" type="7"><i class="fa fa-bicycle"></i></li>
+			<li class="card" type="2"><i class="fa fa-paper-plane-o"></i></li>
+			<li class="card" type="5"><i class="fa fa-cube"></i></li>
+		</ul>
+	</div><!-- script tag -->
+	<script src="js/app.js">
+	</script>
+</body>
+</html>
